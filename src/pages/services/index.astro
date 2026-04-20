@@ -1,0 +1,50 @@
+---
+import Layout from './../../layouts/Layout.astro';
+import FormCallBack from './../../components/FormCallBack.astro';
+import './../../styles/services.css';
+
+const pageTitle = "Услуги";
+---
+<Layout pageTitle={pageTitle} >
+        <section id="about">
+          <div class="container" id="about-item">
+          <h1>{pageTitle}</h1>
+          <div class="services_list">
+            <div class="services_list_item">
+                <a href="/services/laboratory">
+                    <div class="sli_content">
+                        <div class="sli_icon"><img src="src/assets/services_p1.svg"></div>
+                        <div class="sli_header"><h3>Лабараторные испытания бетона</h3></div>
+                        <div class="sli_description">
+                            <p>Полный контроль качества бетонных смесей с помощью собственной лаборатории.</p>
+                        </div>
+                        </div>
+                <div class="sli_button">
+                    <span>Подробнее</span>
+                </div>
+                </a>
+            </div>
+            <div class="services_list_item">
+                <a href="/services/composition">
+                    <div class="sli_content">
+                        <div class="sli_free">Бесплатно</div>
+                        <div class="sli_icon"><img src="src/assets/services_p2.svg"></div>
+                        <div class="sli_header"><h3>Подбор состава бетона/раствора</h3></div>
+                        <div class="sli_description">
+                            <p>Специалисты нашей лаборатории разрабатывают индивидуальный состав бетона под конкретный проект с учётом всех технических требований и климатических условий.</p>
+                        </div>
+                        </div>
+                <div class="sli_button">
+                    <span>Подробнее</span>
+                </div>
+                </a>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section id="connection">
+            <div class="container" id="connection-item">
+                <FormCallBack />
+            </div>
+        </section>
+</Layout>

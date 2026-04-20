@@ -1,11 +1,288 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import SliderCertificates from '../components/SliderCertificates.astro';
+import SliderOffers from '../components/SliderOffers.astro';
+import QuestionAnswer from '../components/QuestionAnswer.astro';
+import SliderNews from '../components/SliderNews.astro';
+import FormCallBack from '../components/FormCallBack.astro';
 import Layout from '../layouts/Layout.astro';
+import '../styles/index.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "Главная";
 ---
+<Layout pageTitle={pageTitle}>
+      <section id="promo" aria-label="promo section">
+        <div class="container" id="hero-banner">
+          <div class="promo-item" id="first-pi">
+            <h1 class="banner-title">Бетон по ГОСТу с доставкой с завода</h1>
+            <form method="post" action="#" class="hero-banner-form">
+              <div class="form-fields">
+              <input class="field_form" type="text" name="name" placeholder="Имя" required />
+              <input class="field_form" type="text" name="phone" placeholder="Телефон" required />
+              <input class="button_form" type="submit" value="Узнать стоимость" />
+              </div>
+              <div class="form-checkbox">
+              <input type="checkbox" name="agree" required>
+              <label for="agree" class="text-agree">Я соглашаюсь с политикой конфиденциальности</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="intro" aria-label="intro section">
+        <div class="container" id="work_process">
+          <h1>Бетон без лишних сложностей</h1>
+          <p>Всего 4 шага</p>
+          <div class="work_process_flow">
+            <div class="flow_component">
+              <img src="/src/assets/application.svg" alt="cm1">
+              <p>Оставьте заявку на сайте или по телефону</p>
+            </div>
+            
+            <div class="flow_component">
+              <img src="/src/assets/coordination.svg" alt="cm2">
+              <p>Согласуйте детали с менеджером</p>
+            </div>
+            
+            <div class="flow_component">
+              <img src="/src/assets/payment.svg" alt="cm3">
+              <p>Оплатите заказ</p>
+            </div>
+            
+            <div class="flow_component">
+              <img src="/src/assets/mixer.svg" alt="cm4">
+              <p>Принимайте бетон на своем объекте</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" aria-label="pricing section">
+        <div class="container" id="pricing_process">
+          <h1>Прайс-лист</h1>
+          <div class="pricing_flow">
+            <button class="btn_pricelist" id="concrete">Товарный бетон</button>
+            <button class="btn_pricelist" id="cps">ЦПС</button>
+            <button class="btn_pricelist" id="rstv">Раствор</button>
+            <button class="btn_pricelist" id="pmd">ПМД</button>
+          </div>
+          <div class="table_field">
+          <table class="price_concrete">
+            <thead>
+            <tr>
+              <td>Марка</td>
+              <td>Класс</td>
+              <td>Цена</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Бетон М100</td>
+              <td>В-7,5</td>
+              <td><strong>4266</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М150</td>
+              <td>В-10</td>
+              <td><strong>4342</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М200</td>
+              <td>В-15</td>
+              <td><strong>4511</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М250</td>
+              <td>В-20</td>
+              <td><strong>4945</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М300</td>
+              <td>В-22,5</td>
+              <td><strong>5098</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М350</td>
+              <td>В-25</td>
+              <td><strong>5265</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М400</td>
+              <td>В-30</td>
+              <td><strong>5585</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М450</td>
+              <td>В-35</td>
+              <td><strong>5921</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>Бетон М500</td>
+              <td>В-40</td>
+              <td><strong>6244</strong> руб.</td>
+            </tr>
+            </tbody>
+          </table>
+          <table class="price_cps">
+            <thead>
+            <tr>
+              <td>Вид</td>
+              <td>Цена</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>ЦПС 1/8</td>
+              <td><strong>3791</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>ЦПС 1/7</td>
+              <td><strong>3970</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>ЦПС 1/6</td>
+              <td><strong>4215</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>ЦПС 1/5</td>
+              <td><strong>4505</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>ЦПС 1/4</td>
+              <td><strong>4905</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>ЦПС 1/3</td>
+              <td><strong>5460</strong> руб.</td>
+            </tr>
+            </tbody>
+          </table>
+          <table class="price_rstv">
+            <thead>
+            <tr>
+              <td>Вид</td>
+              <td>Цена</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>М50 монтажный</td>
+              <td><strong>3745</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>М100 монтажный</td>
+              <td><strong>4163</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>М150 монтажный</td>
+              <td><strong>4565</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>М200 монтажный</td>
+              <td><strong>4975</strong> руб.</td>
+            </tr>
+            <tr>
+              <td>М300 монтажный</td>
+              <td><strong>5640</strong> руб.</td>
+            </tr>
+            </tbody>
+          </table>
+          <table class="price_pmd">
+            <thead>
+            <tr>
+              <td>Вид</td>
+              <td>Цена</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>ПМД -5&deg;C</td>
+              <td><strong>80</strong> руб./м<sup>3</sup></td>
+            </tr>
+            <tr>
+              <td>ПМД -10&deg;C</td>
+              <td><strong>95</strong> руб./м<sup>3</sup></td>
+            </tr>
+            <tr>
+              <td>ПМД -15&deg;C</td>
+              <td><strong>170</strong> руб./м<sup>3</sup></td>
+            </tr>
+            <tr>
+              <td>ПМД -20&deg;C</td>
+              <td><strong>225</strong> руб./м<sup>3</sup></td>
+            </tr>
+            <tr>
+              <td>ПМД -25&deg;C</td>
+              <td><strong>300</strong> руб./м<sup>3</sup></td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+          <FormCallBack />
+        </div>
+        <script>
+          import "../scripts/table.js";
+          </script>
+      </section>
+      <section id="services" aria-label="services section">
+        <div class="container">
+          <div class="delivery">
+            <div class="text-item">
+              <div class="ti-element"><h1>Доставка</h1></div>
+              <div class="ti-element">
+                <img src="/src/assets/car_ti.svg">
+                <h2>Собственный парк техники</h2>
+                <p>В нашем парке представлены бетононасосы  с длинной стрелы от 24 метров и автобетоносмесители для реализации любых строительных решений</p>
+              </div>
+              <div class="ti-element">
+                <img src="/src/assets/map_ti.svg">
+                <h2>Расположение завода</h2>
+                <p>Осуществялем доставку готовых строительных смесей по Санкт-Петербргу и Ленинградской области</p>
+              </div>
+              <div class="ti-element">
+                <img src="/src/assets/ruble_ti.svg">
+                <h2>Стоимость доставки</h2>
+                <p>Стоимость доставки зависит от удаленности объекта от завода и объема доставляемого материала</p>
+              </div>
+            </div>
+            <div class="decor-item">
+            </div>
+          </div>
+        </div>
 
-<Layout>
-	<Welcome />
-</Layout>
+      </section>
+      <section id="certificates" aria-label="certificates section">
+        <div class="container" id="certificates_flow">
+          <h1>Сертификаты</h1>
+          <p>Качество продукции подтверждено</p>
+          <SliderCertificates />
+        </div>
+      </section>
+      <section id="offers" aria-label="offers section">
+        <div class="container">
+          <h1>Наши специальные предложения</h1>
+          <SliderOffers />
+        </div>
+      </section>
+      <section id="question_answer" aria-label="question and answer section">
+        <div class="container">
+          <h1>Вопрос-ответ</h1>
+          <QuestionAnswer />
+        </div>
+      </section>
+      <section id="map" aria-label="map section">
+        <div class="container">
+          <h1>Как нас найти</h1>
+          <p>Производство находится в Ленинградской области, г. Мурино</p>
+          <div class="yamap">
+            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=94355742335"></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="news" aria-label="news sections">
+        <div class="container">
+          <h1>Больше о нашем производстве и продукции</h1>
+          <p>Технологии на производтсве от А до Я</p>
+          <SliderNews />
+        </div>
+      </section>
+
+  </Layout>

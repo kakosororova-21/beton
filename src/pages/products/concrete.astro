@@ -1,0 +1,126 @@
+---
+import Layout from './../../layouts/Layout.astro';
+import FormCallBack from './../../components/FormCallBack.astro';
+import './../../styles/product_item.css';
+
+const pageTitle = "Товарный бетон";
+---
+<Layout pageTitle={pageTitle}>
+        <section id="info">
+            <div class="container" id="info-item">
+                <h1>Товарный бетон</h1>
+                <p>Бетон является основным строительным материалом, применяемым практически во всех сферах строительства. Он представляет собой искусственный камень, получаемый в результате твердения смеси цемента, воды, песка и крупного заполнителя (щебня).</p>
+                <div class="info-pricing-table">
+                    <table class="price_concrete">
+                        <caption>
+                            Товарный бетон
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Марка</td>
+                          <td>Класс</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>Бетон М100</td>
+                          <td>В-7,5</td>
+                          <td><strong>4266</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М150</td>
+                          <td>В-10</td>
+                          <td><strong>4342</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М200</td>
+                          <td>В-15</td>
+                          <td><strong>4511</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М250</td>
+                          <td>В-20</td>
+                          <td><strong>4945</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М300</td>
+                          <td>В-22,5</td>
+                          <td><strong>5098</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М350</td>
+                          <td>В-25</td>
+                          <td><strong>5265</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М400</td>
+                          <td>В-30</td>
+                          <td><strong>5585</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М450</td>
+                          <td>В-35</td>
+                          <td><strong>5921</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>Бетон М500</td>
+                          <td>В-40</td>
+                          <td><strong>6244</strong> руб.</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      
+                      <table class="price_pmd">
+                        <caption>
+                            Противоморозная добавка
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Вид</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>ПМД -5&deg;C</td>
+                          <td><strong>80</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -10&deg;C</td>
+                          <td><strong>95</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -15&deg;C</td>
+                          <td><strong>170</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -20&deg;C</td>
+                          <td><strong>225</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -25&deg;C</td>
+                          <td><strong>300</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+        <section id="description">
+            <div class="container" id="description-item">
+                <p>Бетон является основным строительным материалом, применяемым практически во всех сферах строительства. Он представляет собой искусственный камень, получаемый в результате твердения смеси цемента, воды, песка и крупного заполнителя (щебня).</p>
+                <p>Ключевым показателем качества бетона является его прочность на сжатие, которая определяется маркой (М) и классом (В). Также важными характеристиками являются морозостойкость (F) и водонепроницаемость (W), обеспечивающие долговечность конструкций в различных климатических условиях.</p>
+                <p>Мы производим бетон следующих марок:
+                    <strong>М100</strong>,<strong>М150</strong>, <strong>М200</strong>, <strong>М250</strong>, <strong>М300</strong>, <strong>М350</strong>, <strong>М400</strong>, <strong>М450</strong>, <strong>М500</strong></p>
+                <p>Каждая марка предназначена для определённых задач:</p>
+                <ul>
+                  <li><strong>М100 – М150</strong> — подготовительные работы, основания</li>
+                  <li><strong>М200 – М300</strong> — фундаменты, стяжки, дорожные покрытия</li>
+                  <li><strong>М350 и выше</strong> — несущие конструкции, монолитное строительство</li>
+                </ul>
+                <p>В производстве используется качественное сырьё и современные технологии, что гарантирует стабильные характеристики и высокую прочность готового бетона.</p>
+                <FormCallBack />
+            </div>
+        </section>
+</Layout>

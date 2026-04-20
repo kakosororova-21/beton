@@ -1,0 +1,18 @@
+---
+import '../styles/formcallback.css';
+---
+<div class="form-connect">
+    <h2>Оставьте заявку</h2>
+    <p>Оставьте контакты, наш менеджер свяжется с вами в ближайщее время</p>
+    <form method="post" action="#" class="connection">
+      <div class="form-fields">
+        <input class="field_form" type="text" name="name" placeholder="Имя" required />
+        <input class="field_form" type="text" name="phone" placeholder="Телефон" required />
+        <input class="button_form" type="submit" value="Отправить" />
+        </div>
+        <div class="form-checkbox">
+        <input type="checkbox" name="agree" required>
+        <lable for="agree" class="text-agree">Я соглашаюсь с политикой конфиденциальности</lable>
+      </div>
+    </form>
+  </div>

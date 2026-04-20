@@ -1,0 +1,47 @@
+thead td{
+    border: 1px solid rgba(34, 60, 80, 0.2);
+}
+.info-pricing-table{
+    display: flex;
+}
+#info-item p {
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+    text-align: justify;
+}
+#info{
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+}
+caption{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1B3764;
+    padding: 10px;
+    text-align: left;
+}
+#description{
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+#description-item li{
+    padding: 10px 0 10px 0;
+    list-style: inside;
+}
+#description-item{
+    font-size: 18px;
+    text-align: justify;
+}
+#description-item p{
+    padding: 10px 0 10px 0;
+    line-height: 1.5;
+}
+.form-connect{
+    margin: 10px 0 10px 0;
+}
+@media screen and (max-width: 645px){
+    .info-pricing-table{
+        flex-wrap: wrap;
+    }
+}

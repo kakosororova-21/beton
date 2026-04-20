@@ -1,0 +1,52 @@
+---
+import '../styles/hamburger.css';
+---
+  <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <nav class="mobile-menu" aria-label="mobile navigation">
+    <a href="/"><img class="logo" src="/src/assets/logo_beton_ft.svg" alt="logo_mobile_menu"></a>
+    <ul class="mobile-menu__list">
+  
+      <li class="mobile-menu__item">
+        <a href="/about" class="mobile-menu__link">О компании</a>
+      </li>
+  
+      <li class="mobile-menu__item">
+        <a href="/products" class="mobile-menu__link">Продукция</a>
+        <ul class="mobile-submenu">
+          <li><a href="/products/concrete" class="mobile-menu__link">Товарный бетон</a></li>
+          <li><a href="/products/cps" class="mobile-menu__link">Цементно-песчаные смеси</a></li>
+          <li><a href="/products/rstv" class="mobile-menu__link">Монтажный раствор</a></li>
+        </ul>
+      </li>
+  
+      <li class="mobile-menu__item">
+        <a href="/services" class="mobile-menu__link">Услуги</a>
+        <ul class="mobile-submenu">
+          <li><a href="/services/composition" class="mobile-menu__link">Подбор состава бетона/раствора</a></li>
+          <li><a href="/services/laboratory" class="mobile-menu__link">Лабараторные испытания бетона</a></li>
+        </ul>
+      </li>
+  
+      <li class="mobile-menu__item">
+        <a href="/delivery" class="mobile-menu__link">Доставка</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">Связаться с нами</a>
+        <ul class="mobile-submenu">
+          <li><a href="tel:89667575734" class="mobile-menu__link">+7-966-757-57-34 - Сергей</a></li>
+          <li><a href="tel:89315343242" class="mobile-menu__link">+7-931-534-32-42 - Тимур</a></li>
+        </ul>
+      </li>
+  
+    </ul>
+
+  </nav>
+
+<script>
+    import "../scripts/menu-mobile.js";
+    </script>

@@ -1,0 +1,38 @@
+---
+import '../styles/navigation.css';
+---
+<nav class="nav" aria-label="header navigation">
+    <ul class="nav-list" aria-label="header navigation list">
+        <li>
+            <a data-astro-history="push" href="/about" class="nav-link child-1" aria-label="link to home">О компании</a>
+        </li>
+        <li>
+            <a href="/products" class="nav-link child-2" aria-label="link to production">Продукция</a>
+            <ul class="sub-menu">
+                <li>
+                    <a data-astro-history="push" href="/products/concrete" class="nav-link" aria-label="link to prod type 1">Товарный бетон</a>
+                </li>
+                <li>
+                    <a data-astro-history="push" href="/products/cps" class="nav-link" aria-label="link to prod type 1">Цементно-песчаные смеси</a>
+                </li>
+                <li>
+                    <a data-astro-history="push" href="/products/rstv" class="nav-link" aria-label="link to prod type 1">Монтажный раствор</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a data-astro-history="push" href="/services" class="nav-link child-3" aria-label="lint to services">Услуги</a>
+            <ul class="sub-menu">
+                <li>
+                    <a data-astro-history="push" href="/services/composition" class="nav-link" aria-label="lint to services type 1">Подбор состава бетона/раствора</a>
+                </li>
+                <li>
+                    <a data-astro-history="push" href="/services/laboratory" class="nav-link" aria-label="lint to services type 2">Лабараторные испытания бетона</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a data-astro-history="push" href="/delivery" class="nav-link child-4" aria-label="lint to delivery">Доставка</a>
+        </li>
+    </ul>
+</nav>

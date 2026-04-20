@@ -1,0 +1,31 @@
+---
+import '../styles/slidernews.css';
+---
+<div class="news-slider">
+  <div class="news-wrapper">
+    <div class="news-item">
+      <img src="src/assets/news_1.jpg" alt="Новость 1" class="news-media">
+      <div class="news-content">
+        <h3>Бетон для ЖК "Авиатор" в Мурино</h3>
+      </div>
+    </div>
+    <div class="news-item">
+      <video class="news-media" autoplay muted loop playsinline>
+        <source src="src/assets/mavis_beton.mp4" type="video/mp4">
+      </video>
+      <div class="news-content">
+        <h3>Наше производство в Мурино (Ленинградская область)</h3>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="slider-controls">
+  <button class="slider-btn" id="prevBtn">Назад</button>
+  <button class="slider-btn" id="nextBtn">Вперед</button>
+</div>
+
+<script>
+  import '../scripts/slidernews.js';
+  </script>

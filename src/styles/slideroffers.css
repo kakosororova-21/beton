@@ -1,0 +1,42 @@
+.slider_offer {
+    position: relative;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+  }
+
+  .slides_offer {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .slides_offer img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  /* Кнопки */
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .btn:hover {
+    background: rgba(0,0,0,0.8);
+  }
+
+  .prev {
+    left: 10px;
+    z-index: 10;
+  }
+
+  .next {
+    right: 10px;
+  }

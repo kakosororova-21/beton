@@ -1,0 +1,102 @@
+---
+import Layout from './../../layouts/Layout.astro';
+import FormCallBack from './../../components/FormCallBack.astro';
+import './../../styles/product_item.css';
+
+const pageTitle = "Цементно-песчаные смеси";
+---
+<Layout pageTitle={pageTitle}>
+        <section id="info">
+            <div class="container" id="info-item">
+                <h1>Цементно-песчаные смеси</h1>
+                <p>Цементно-песчаная смесь — это универсальный строительный материал, состоящий из цемента и песка в различных пропорциях. Благодаря своей простоте и эффективности ЦПС широко применяется в строительстве и ремонте.</p>
+                <div class="info-pricing-table">
+                    <table class="price_cps">
+                        <caption>
+                            Цементно-песчаные смеси
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Вид</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>ЦПС 1/8</td>
+                          <td><strong>3791</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>ЦПС 1/7</td>
+                          <td><strong>3970</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>ЦПС 1/6</td>
+                          <td><strong>4215</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>ЦПС 1/5</td>
+                          <td><strong>4505</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>ЦПС 1/4</td>
+                          <td><strong>4905</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>ЦПС 1/3</td>
+                          <td><strong>5460</strong> руб.</td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="price_pmd">
+                        <caption>
+                            Противоморозная добавка
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Вид</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>ПМД -5&deg;C</td>
+                          <td><strong>80</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -10&deg;C</td>
+                          <td><strong>95</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -15&deg;C</td>
+                          <td><strong>170</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -20&deg;C</td>
+                          <td><strong>225</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -25&deg;C</td>
+                          <td><strong>300</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+        <section id="description">
+            <div class="container" id="description-item">
+                <p>Основные области применения:</p>
+                <ul>
+                    <li>выравнивание полов и стен;</li>
+                    <li>устройство стяжек;</li>
+                    <li>кладочные работы;</li>
+                    <li>заполнение швов и пустот;</li>
+                    <li>дорожные и подготовительные работы.</li>
+                </ul>
+                <p>Мы предлагаем ЦПС различных составов, что позволяет подобрать оптимальное решение под конкретные задачи. Смеси отличаются высокой адгезией, удобством укладки и равномерным набором прочности.</p>
+                <FormCallBack />
+            </div>
+        </section>
+</Layout>

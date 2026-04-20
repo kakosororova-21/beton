@@ -1,0 +1,97 @@
+---
+import Layout from './../../layouts/Layout.astro';
+import FormCallBack from './../../components/FormCallBack.astro';
+import './../../styles/product_item.css';
+
+const pageTitle = "Монтажный раствор";
+---
+<Layout pageTitle={pageTitle}>
+        <section id="info">
+            <div class="container" id="info-item">
+                <h1>Монтажный раствор</h1>
+                <p>Монтажный раствор представляет собой смесь цемента, песка, воды и специальных добавок. В отличие от бетона, он не содержит крупного заполнителя, что делает его идеальным для точных и аккуратных строительных работ.</p>
+                <div class="info-pricing-table">
+                    <table class="price_rstv">
+                        <caption>
+                            Монтажный раствор
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Вид</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>М50 монтажный</td>
+                          <td><strong>3745</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>М100 монтажный</td>
+                          <td><strong>4163</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>М150 монтажный</td>
+                          <td><strong>4565</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>М200 монтажный</td>
+                          <td><strong>4975</strong> руб.</td>
+                        </tr>
+                        <tr>
+                          <td>М300 монтажный</td>
+                          <td><strong>5640</strong> руб.</td>
+                        </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="price_pmd">
+                        <caption>
+                            Противоморозная добавка
+                        </caption>
+                        <thead>
+                        <tr>
+                          <td>Вид</td>
+                          <td>Цена</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>ПМД -5&deg;C</td>
+                          <td><strong>80</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -10&deg;C</td>
+                          <td><strong>95</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -15&deg;C</td>
+                          <td><strong>170</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -20&deg;C</td>
+                          <td><strong>225</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        <tr>
+                          <td>ПМД -25&deg;C</td>
+                          <td><strong>300</strong> руб./м<sup>3</sup></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+        <section id="description">
+            <div class="container" id="description-item">
+                <p>Раствор применяется для:</p>
+                <ul>
+                    <li>монтажа строительных конструкций;</li>
+                    <li>заполнения швов между панелями и блоками;</li>
+                    <li>выравнивания поверхностей;</li>
+                    <li>устройства площадок с умеренной нагрузкой.</li>
+                </ul>
+                <p>Наши монтажные растворы обладают хорошей пластичностью, высокой адгезией и удобны в работе, что позволяет значительно ускорить строительные процессы и повысить качество выполнения работ.</p>
+                <FormCallBack />
+            </div>
+        </section>
+</Layout>

@@ -1,0 +1,75 @@
+---
+import Logo from '../assets/logo_beton_ft.svg';
+import CallButton from '../components/CallButton.astro';
+
+import '../styles/footer.css';
+---
+<footer id="footer">
+    <div class="container" id="bottom">
+      <div class="footer-item" id="first-fi">
+        <a href="/" data-astro-history="push"><Logo></a>
+      </div>
+      <div class="footer-item" id="second-fi">
+        <ul class="menu-footer">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/products">Продукция</a></li>
+          <ul class="sub-menu-footer">
+              <li><a href="/products/concrete">Товарный бетон</a></li>
+              <li><a href="/products/cps">Цементно-песчаные смеси</a></li>
+              <li><a href="/products/rstv">Монтажный раствор</a></li>
+          </ul>
+      </ul>
+      </div>
+      <div class="footer-item" id="third-fi">
+        <ul class="menu-footer">
+          <li><a href="/services">Услуги</a></li>
+          <ul class="sub-menu-footer">
+              <li><a href="/services/composition">Подбор состава бетона</a></li>
+              <li><a href="/services/laboratory">Лабараторные испытания бетона</a></li>
+          </ul>
+      </ul>
+      </div>
+      <div class="footer-item" id="fourth-fi">
+        <ul class="menu-footer">
+          <li><a href="/delivery">Доставка</a></li>
+      </ul>
+      </div>
+      <div class="footer-item" id="fifth-fi">
+        <ul class="menu-footer">
+          <li><a href="/about">О компании</a></li>
+          </ul>
+      <div class="footer-contact">
+          <img src="/src/assets/phone_ft.svg" alt="phone">
+          <div class="connect-footer">
+          <p>с 9:00 до 21:00 без выходных</p>
+          </div>
+      </div>
+      <CallButton />
+      <div class="footer-contact">
+          <img src="/src/assets/map_ft.svg" alt="location">
+          <div class="connect-footer">
+          <p>Офис</p>
+          <a href="https://yandex.ru/maps/-/CPCRAF66">Санкт-Петербург, Дорога на Турухтанные острова, 6</a>
+          <p>Производство</p>
+          <a href="https://yandex.ru/maps/-/CPCREN0C">Ленинградская область, Мурино</a>
+          </div>
+      </div>
+      <div class="footer-contact">
+          <img src="/src/assets/email_ft.svg" alt="email">
+          <div class="connect-footer">
+          <p>Email</p>
+          <a href="#">mavis-beton@mavis.ru</a>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="container" id="bottom-info">
+      <div class="info-item">
+        <a href="#"><h3>Политика конфиденциальности</h3></a>
+        <p>Вся информация на сайте не является публичной офертой, определяемой положениями статьи 437 ГК РФ</p>
+      </div>
+      <div class="info-item">
+        <a href="https://kitdev.ru/">Разработка сайта: ООО "КИТ"</a>
+      </div>
+    </div>
+  </footer>

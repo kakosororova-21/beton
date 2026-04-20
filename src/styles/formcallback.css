@@ -1,0 +1,52 @@
+.form-connect{
+    background-image: url('../assets/form.jpg');
+    background-size: cover;
+    background-position: 10% 20%;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 10px;
+  }
+  .form-connect h2{
+    font-size: 24px;
+    font-weight: 600;
+    color:#1B3764;
+    padding: 10px 0 10px 0;
+  }
+  .form-connect p{
+    padding: 10px 0 10px 0;
+    color:#f4f4f4;
+  }
+  .connection .form-fields .button_form{
+    padding: 10px 50px;
+  }
+  .field_form{
+    height: 49px;
+    border-radius: 16px;
+    border: 1px solid #1B3764;
+    padding: 10px 30px 10px 30px;
+    margin: 5px 0 5px 0;
+    font-size: 16px;
+    }
+    .button_form{
+    height: 49px;
+    border-radius: 16px;
+    border: none;
+    background-color: #1B3764;
+    color: #eff1f4;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+    }
+    .form-checkbox{
+    margin: 5px 0 5px 0;
+    }
+    .text-agree{
+    color:#F3F2F5;
+    }
+    .button_form:hover{
+    background-color: #dae7fe;
+    color: #1B3764;
+    border: 1px solid #1B3764;
+    }

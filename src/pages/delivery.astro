@@ -1,0 +1,46 @@
+---
+const pageTitle = "Доставка";
+import Layout from '../layouts/Layout.astro';
+import FormCallBack from '../components/FormCallBack.astro';
+import '../styles/delivery.css';
+---
+<Layout pageTitle={pageTitle}>
+        <section id="delivery">
+            <div class="container" id="delivery-item">
+                <h1>{pageTitle}</h1>
+                <div class="delivery-item-content">
+                    <div class="content-text">
+                        <div class="ct-item"><p>Доставка осуществляется по Санкт-Петербургу и Ленинградской области.</p></div>
+                        <div class="ct-item">
+                            <img src="/src/assets/scales.svg" class="ct-icon">
+                            <div class="ct-header">Весовой контроль АБС</div>
+                        <div class="ct-description">Автобетоносмесители (АБС) оборудованы системами весового контроля, которые позволяют точно измерять количество доставляемого бетона.</div>
+                    </div>
+                        <div class="ct-item">
+                            <img src="/src/assets/gps.svg" class="ct-icon">
+                            <div class="ct-header">GPS контроль машин</div>
+                            <div class="ct-description">Все транспортные средства компании оснащены GPS-трекерами, что позволяет в режиме реального времени отслеживать их местоположение, маршрут и скорость движения.</div>
+                    </div>
+                        <div class="ct-item">
+                            <img src="/src/assets/quality.svg" class="ct-icon">
+                            <div class="ct-header">Постоянный контроль качества</div>
+                            <div class="ct-description">Качество бетонной смеси контролируется на всех этапах — от приготовления до доставки.</div>
+                    </div>
+                        <div class="ct-item">
+                            <img src="/src/assets/delivery.svg" class="ct-icon">
+                            <div class="ct-header">Твой парк техники</div>
+                            <div class="ct-description">Компания имеет собственный парк техники, включающий автобетоносмесители и автобетононасосы с разной длиной стрелы.</div>
+                    </div>
+                    </div>
+                    <div class="content-icon">
+                <img src="/src/assets/delivery_p1.png">
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="connection">
+            <div class="container" id="connection-item">
+                <FormCallBack />
+            </div>
+        </section>
+</Layout>
