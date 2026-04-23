@@ -76,6 +76,9 @@
   .text-agree{
   color:#F3F2F5;
   }
+  .text-agree a{
+    color:#F3F2F5;
+  }
   .button_form:hover{
   background-color: #dae7fe;
   }
