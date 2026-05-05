@@ -1,0 +1,17 @@
+a{
+    text-decoration: none
+}
+.first-item a{
+    color: #444444;
+}
+.first-item a:hover{
+    text-decoration: underline;
+}
+.first-item li{
+    padding: 10px 0 10px 0;
+    font-weight: 700;
+}
+.second-item li{
+    font-weight: 400;
+    padding-left: 10px;
+}

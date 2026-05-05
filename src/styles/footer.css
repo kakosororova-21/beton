@@ -42,6 +42,12 @@
     margin: 10px 0 10px 0;
     display: flex;
   }
+  .footer-contact a{
+    color:#fff;
+  }
+  .footer-contact a:hover{
+    text-decoration: underline;
+  }
   .footer-contact img{
     margin: 10px 10px 10px 0;
   }
