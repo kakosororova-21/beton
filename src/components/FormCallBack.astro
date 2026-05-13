@@ -4,15 +4,17 @@ import '../styles/formcallback.css';
 <div class="form-connect">
     <h2>Оставьте заявку</h2>
     <p>Оставьте контакты, наш менеджер свяжется с вами в ближайщее время</p>
-    <form method="post" action="#" class="connection">
+    <form class="connection" id="form2" novalidate>
       <div class="form-fields">
         <input class="field_form" type="text" name="name" placeholder="Имя" required />
         <input class="field_form" type="text" name="phone" placeholder="Телефон" required />
         <input class="button_form" type="submit" value="Отправить" />
-        </div>
-        <div class="form-checkbox">
-        <input type="checkbox" name="agree" required>
-        <lable for="agree" class="text-agree">Я соглашаюсь с <a href="/src/assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="/src/assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a></lable>
+      </div>
+      <div class="form-checkbox">
+        <input type="checkbox" name="consent" id="consent2" required />
+        <label for="consent2" class="text-agree">
+          Я соглашаюсь с <a href="/src/assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="/src/assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a>
+        </label>
       </div>
     </form>
   </div>

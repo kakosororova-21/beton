@@ -16,15 +16,17 @@ const pageTitle = "Главная";
         <div class="container" id="hero-banner">
           <div class="promo-item" id="first-pi">
             <h1 class="banner-title">Бетон по ГОСТу с доставкой с завода</h1>
-            <form method="post" action="#" class="hero-banner-form">
+            <form class="hero-banner-form" id="form1" novalidate>
               <div class="form-fields">
-              <input class="field_form" type="text" name="name" placeholder="Имя" required />
-              <input class="field_form" type="text" name="phone" placeholder="Телефон" required />
-              <input class="button_form" type="submit" value="Узнать стоимость" />
+                <input class="field_form" type="text" name="name" placeholder="Имя" required />
+                <input class="field_form" type="text" name="phone" placeholder="Телефон" required />
+                <input class="button_form" type="submit" value="Узнать стоимость" />
               </div>
               <div class="form-checkbox">
-              <input type="checkbox" name="agree" required>
-              <label for="agree" class="text-agree">Я соглашаюсь с <a href="/src/assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="/src/assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a></label>
+                <input type="checkbox" name="consent" id="consent1" required />
+                <label for="consent1" class="text-agree">
+                  Я соглашаюсь с <a href="/src/assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="/src/assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a>
+                </label>
               </div>
             </form>
           </div>
