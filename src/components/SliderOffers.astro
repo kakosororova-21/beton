@@ -1,16 +1,18 @@
 ---
+import { Image } from 'astro:assets';
+import offer_1 from '../assets/offer_1.png';
+import offer_2 from '../assets/offer_2.png';
 import '../styles/slideroffers.css';
 ---
 <div class="slider_offer">
-    <button class="btn prev">❮</button>
-  
+    <button class="btn prev">❮</button>  
     <div class="slides_offer" id="slides">
-      <img src="../assets/offer_1.png" alt="offer_1">
-      <img src="../assets/offer_2.png" alt="offer_2">
+      <Image src={offer_1} alt="offer_1" />
+      <Image src={offer_2} alt="offer_2" />
     </div>
   
     <button class="btn next">❯</button>
-  </div>
+</div>
 
 <script>
     import "../scripts/slideroffers.js";

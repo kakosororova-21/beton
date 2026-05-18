@@ -5,6 +5,15 @@ import SliderNews from '../components/SliderNews.astro';
 import FormCallBack from '../components/FormCallBack.astro';
 import Layout from '../layouts/Layout.astro';
 import '../styles/index.css';
+import { Image } from 'astro:assets';
+import application from '../assets/application.svg';
+import coordination from '../assets/coordination.svg';
+import payment from '../assets/payment.svg';
+import mixer from '../assets/mixer.svg';
+import car_ti from '../assets/car_ti.svg';
+import map_ti from '../assets/map_ti.svg';
+import ruble_ti from '../assets/ruble_ti.svg';
+
 
 const pageTitle = "Главная";
 ---
@@ -37,22 +46,22 @@ const pageTitle = "Главная";
           <p>Всего 4 шага</p>
           <div class="work_process_flow">
             <div class="flow_component">
-              <img src="../assets/application.svg" alt="cm1">
+              <Image src={application} alt="cm1"/>
               <p>Оставьте заявку на сайте или по телефону</p>
             </div>
             
             <div class="flow_component">
-              <img src="../assets/coordination.svg" alt="cm2">
+              <Image src={coordination} alt="cm2"/>
               <p>Согласуйте детали с менеджером</p>
             </div>
             
             <div class="flow_component">
-              <img src="../assets/payment.svg" alt="cm3">
+              <Image src={payment} alt="cm3"/>
               <p>Оплатите заказ</p>
             </div>
             
             <div class="flow_component">
-              <img src="../assets/mixer.svg" alt="cm4">
+              <Image src={mixer} alt="cm4"/>
               <p>Принимайте бетон на своем объекте</p>
             </div>
           </div>
@@ -231,17 +240,17 @@ const pageTitle = "Главная";
             <div class="text-item">
               <div class="ti-element"><h1>Доставка</h1></div>
               <div class="ti-element">
-                <img src="../assets/car_ti.svg" alt="car">
+                <Image src={car_ti} alt="car"/>
                 <h2>Собственный парк техники</h2>
-                <p>В нашем парке представлены бетононасосы  с длинной стрелы от 24 метров и автобетоносмесители для реализации любых строительных решений</p>
+                <p>В нашем парке представлены бетононасосы с длиной стрелы от 24 метров и автобетоносмесители для реализации любых строительных решений</p>
               </div>
               <div class="ti-element">
-                <img src="../assets/map_ti.svg" alt="beton">
+                <Image src={map_ti} alt="beton"/>
                 <h2>Расположение завода</h2>
                 <p>Осуществляем доставку готовых строительных смесей по Санкт-Петербургу и Ленинградской области</p>
               </div>
               <div class="ti-element">
-                <img src="../assets/ruble_ti.svg" alt="beton">
+                <Image src={ruble_ti} alt="beton"/>
                 <h2>Стоимость доставки</h2>
                 <p>Стоимость доставки зависит от удаленности объекта от завода и объема доставляемого материала</p>
               </div>

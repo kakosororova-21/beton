@@ -1,7 +1,13 @@
 ---
 const pageTitle = "Доставка";
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import FormCallBack from '../components/FormCallBack.astro';
+import scales from '../assets/scales.svg';
+import gps from '../assets/gps.svg';
+import quality from '../assets/quality.svg';
+import delivery_icon from '../assets/delivery.svg';
+import delivery_p1 from '../assets/delivery_p1.png';
 import '../styles/delivery.css';
 ---
 <meta name="description" content="Доставка бетона по Мурино, Всеволожскому району и Ленинградской области. Миксеры 5–12 м³, точное время, отслеживание машины. Уточняйте стоимость по телефону: 89667575734 и 89315343242.">
@@ -14,28 +20,28 @@ import '../styles/delivery.css';
                     <div class="content-text">
                         <div class="ct-item"><p>Доставка осуществляется по Санкт-Петербургу и Ленинградской области</p></div>
                         <div class="ct-item">
-                            <img src="../assets/scales.svg" class="ct-icon">
+                            <Image src={scales} class="ct-icon" alt="Весовой контроль АБС"/>
                             <div class="ct-header">Весовой контроль АБС</div>
                         <div class="ct-description">Весовой контроль осуществляется автомобильными весами при отправке на объект</div>
                     </div>
                         <div class="ct-item">
-                            <img src="../assets/gps.svg" class="ct-icon">
+                            <Image src={gps} class="ct-icon" alt="GPS контроль машин"/>
                             <div class="ct-header">GPS контроль машин</div>
                             <div class="ct-description">Все транспортные средства компании оснащены GPS-трекерами, что позволяет в режиме реального времени отслеживать их местоположение, маршрут и скорость движения</div>
                     </div>
                         <div class="ct-item">
-                            <img src="../assets/quality.svg" class="ct-icon">
+                            <Image src={quality} class="ct-icon" alt="Постоянный контроль качества"/>
                             <div class="ct-header">Постоянный контроль качества</div>
                             <div class="ct-description">Качество бетонной смеси контролируется на всех этапах — от приготовления до доставки</div>
                     </div>
                         <div class="ct-item">
-                            <img src="../assets/delivery.svg" class="ct-icon">
-                            <div class="ct-header">Твой парк техники</div>
+                            <Image src={delivery_icon} class="ct-icon" alt="Собственный парк техники"/>
+                            <div class="ct-header">Собственный парк техники</div>
                             <div class="ct-description">Компания имеет собственный парк техники, включающий автобетоносмесители и автобетононасосы с разной длиной стрелы</div>
                     </div>
                     </div>
                     <div class="content-icon">
-                <img src="../assets/delivery_p1.png">
+                <Image src={delivery_p1} alt="Доставка бетона"/>
                 </div>
                 </div>
             </div>
