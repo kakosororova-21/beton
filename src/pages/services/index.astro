@@ -1,6 +1,9 @@
 ---
 import Layout from './../../layouts/Layout.astro';
 import FormCallBack from './../../components/FormCallBack.astro';
+import { Image } from 'astro:assets';
+import serv1 from '../../assets/services_p1.svg';
+import serv2 from '../../assets/services_p2.svg';
 import './../../styles/services.css';
 
 const pageTitle = "Услуги";
@@ -13,7 +16,7 @@ const pageTitle = "Услуги";
             <div class="services_list_item">
                 <a href="/services/laboratory">
                     <div class="sli_content">
-                        <div class="sli_icon"><img src="src/assets/services_p1.svg"></div>
+                        <div class="sli_icon"><Image src={serv1} alt="" /></div>
                         <div class="sli_header"><h3>Лабораторные испытания бетона</h3></div>
                         <div class="sli_description">
                             <p>Полный контроль качества бетонных смесей с помощью собственной лаборатории.</p>
@@ -28,7 +31,7 @@ const pageTitle = "Услуги";
                 <a href="/services/composition">
                     <div class="sli_content">
                         <div class="sli_free">Бесплатно</div>
-                        <div class="sli_icon"><img src="src/assets/services_p2.svg"></div>
+                        <div class="sli_icon"><Image src={serv2} alt="" /></div>
                         <div class="sli_header"><h3>Подбор состава бетона/раствора</h3></div>
                         <div class="sli_description">
                             <p>Специалисты нашей лаборатории разрабатывают индивидуальный состав бетона под конкретный проект с учётом всех технических требований и климатических условий.</p>

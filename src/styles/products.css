@@ -13,7 +13,7 @@
   
   /* Левая картинка с выпирающей правой границей */
   .banner-img.left {
-    background-image: url('/src/assets/product_banner_1.jpg');
+    background-image: url('../assets/product_banner_1.jpg');
     clip-path: polygon(
       0 0, 
       100% 0, 
@@ -24,7 +24,7 @@
   
   /* Правая картинка с выпирающей левой границей */
   .banner-img.right {
-    background-image: url('/src/assets/product_banner_2.jpg');
+    background-image: url('../assets/product_banner_2.jpg');
     clip-path: polygon(
       20% 0, 
       100% 0, 
@@ -72,7 +72,7 @@ thead td{
         display: none;
     }
     .banner-text{
-        background-image: url('/src/assets/product_banner_1.jpg');
+        background-image: url('../assets/product_banner_1.jpg');
     }
     .banner-text h1{
         color: #1B3764;

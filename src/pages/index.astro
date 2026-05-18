@@ -1,5 +1,4 @@
 ---
-import SliderCertificates from '../components/SliderCertificates.astro';
 import SliderOffers from '../components/SliderOffers.astro';
 import QuestionAnswer from '../components/QuestionAnswer.astro';
 import SliderNews from '../components/SliderNews.astro';
@@ -25,7 +24,7 @@ const pageTitle = "Главная";
               <div class="form-checkbox">
                 <input type="checkbox" name="consent" id="consent1" required />
                 <label for="consent1" class="text-agree">
-                  Я соглашаюсь с <a href="/src/assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="/src/assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a>
+                  Я соглашаюсь с <a href="../assets/privacy_policy_mavis_beton.pdf">политикой конфиденциальности</a> и <a href="../assets/consent_of_personal_data_mavis_beton.pdf">условиями обработки персональных данных</a>
                 </label>
               </div>
             </form>
@@ -38,22 +37,22 @@ const pageTitle = "Главная";
           <p>Всего 4 шага</p>
           <div class="work_process_flow">
             <div class="flow_component">
-              <img src="/src/assets/application.svg" alt="cm1">
+              <img src="../assets/application.svg" alt="cm1">
               <p>Оставьте заявку на сайте или по телефону</p>
             </div>
             
             <div class="flow_component">
-              <img src="/src/assets/coordination.svg" alt="cm2">
+              <img src="../assets/coordination.svg" alt="cm2">
               <p>Согласуйте детали с менеджером</p>
             </div>
             
             <div class="flow_component">
-              <img src="/src/assets/payment.svg" alt="cm3">
+              <img src="../assets/payment.svg" alt="cm3">
               <p>Оплатите заказ</p>
             </div>
             
             <div class="flow_component">
-              <img src="/src/assets/mixer.svg" alt="cm4">
+              <img src="../assets/mixer.svg" alt="cm4">
               <p>Принимайте бетон на своем объекте</p>
             </div>
           </div>
@@ -232,17 +231,17 @@ const pageTitle = "Главная";
             <div class="text-item">
               <div class="ti-element"><h1>Доставка</h1></div>
               <div class="ti-element">
-                <img src="/src/assets/car_ti.svg">
+                <img src="../assets/car_ti.svg" alt="car">
                 <h2>Собственный парк техники</h2>
                 <p>В нашем парке представлены бетононасосы  с длинной стрелы от 24 метров и автобетоносмесители для реализации любых строительных решений</p>
               </div>
               <div class="ti-element">
-                <img src="/src/assets/map_ti.svg">
+                <img src="../assets/map_ti.svg" alt="beton">
                 <h2>Расположение завода</h2>
-                <p>Осуществялем доставку готовых строительных смесей по Санкт-Петербргу и Ленинградской области</p>
+                <p>Осуществляем доставку готовых строительных смесей по Санкт-Петербургу и Ленинградской области</p>
               </div>
               <div class="ti-element">
-                <img src="/src/assets/ruble_ti.svg">
+                <img src="../assets/ruble_ti.svg" alt="beton">
                 <h2>Стоимость доставки</h2>
                 <p>Стоимость доставки зависит от удаленности объекта от завода и объема доставляемого материала</p>
               </div>
@@ -277,7 +276,7 @@ const pageTitle = "Главная";
       <section id="news" aria-label="news sections">
         <div class="container">
           <h1>Больше о нашем производстве и продукции</h1>
-          <p>Технологии на производтсве от А до Я</p>
+          <p>Технологии на производстве от А до Я</p>
           <SliderNews />
         </div>
       </section>
