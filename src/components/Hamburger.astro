@@ -1,5 +1,7 @@
 ---
 import '../styles/hamburger.css';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo_beton_ft.svg';
 ---
   <button class="mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
     <span></span>
@@ -8,7 +10,7 @@ import '../styles/hamburger.css';
   </button>
   
   <nav class="mobile-menu" aria-label="mobile navigation">
-    <a href="/"><img class="logo" src="../assets/logo_beton_ft.svg" alt="logo_mobile_menu"></a>
+    <a href="/"><Image src={logo} alt="logo_mobile_menu"/></a>
     <ul class="mobile-menu__list">
   
       <li class="mobile-menu__item">
