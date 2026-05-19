@@ -1,5 +1,7 @@
 ---
 import '../styles/callbutton.css';
+import { Image } from 'astro:assets';
+import profile from '../assets/profile.svg';
 ---
   <div class="call-component">
     <button class="btn_call" type="button">Позвонить</button>
@@ -10,12 +12,12 @@ import '../styles/callbutton.css';
         <h3>Связаться с нами</h3>
   
         <div class="phone">
-          <img src="../assets/profile.svg" alt="profile">
+          <Image src={profile} alt="profile"/>
           <a href="tel:89667575734">+7-966-757-57-34</a> Сергей
         </div>
   
         <div class="phone">
-          <img src="../assets/profile.svg" alt="profile">
+          <Image src={profile} alt="profile"/>
           <a href="tel:89315343242">+7-931-534-32-42</a> Тимур
         </div>
       </div>
