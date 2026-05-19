@@ -54,6 +54,7 @@
   }
 
   .slider-controls {
+    display: none;
     margin-top: 15px;
     text-align: center;
     display: flex;
@@ -79,5 +80,8 @@
   @media (max-width: 768px) {
     .news-item {
       flex: 0 0 100%;
+    }
+    .slider-controls{
+      display: block;
     }
   }
