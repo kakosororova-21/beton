@@ -1,0 +1,92 @@
+/* КНОПКА */
+.mobile-toggle {
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  background: white;
+}
+
+/* КРЕСТИК */
+.mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* МЕНЮ */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+
+  background: #1B3764;
+  color: #fff;
+
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile-menu--open {
+  transform: translateY(0);
+}
+
+/* СПИСОК */
+.mobile-menu__list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ПУНКТ */
+.mobile-menu__item {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ССЫЛКИ */
+.mobile-menu__link {
+  display: block;
+  padding: 15px 10px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ПОДМЕНЮ */
+.mobile-submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0;
+  display: none;
+}
+
+.mobile-menu__item.open .mobile-submenu {
+  display: block;
+}
+
+.mobile-submenu .mobile-menu__link {
+  font-size: 16px;
+}

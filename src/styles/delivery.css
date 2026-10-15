@@ -1,0 +1,49 @@
+.delivery-item-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-icon img{
+    max-width: 450px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.content-text{
+    margin: 10px 0 10px 0;
+    max-width: 850px;
+    width: 100%;
+    line-height: 1.5;
+}
+.content-text p{
+    padding: 10px 0 10px 0;
+}
+.content-text ul li{
+    font-weight: 600;
+}
+.ct-icon{
+    height: 45px;
+    margin: 0 10px 0 10px;
+    max-width: 85px;
+    width: 100%;
+}
+.ct-item{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ct-header{
+    padding: 10px 0 10px 0;
+    margin: 0 10px 0 10px;
+    max-width: 150px;
+    width: 100%;
+    font-weight: 600;
+}
+.ct-item p{
+    margin: 0 10px 0 10px;
+}
+.ct-description{
+    max-width: 475px;
+    width: 100%;
+    margin: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
+}

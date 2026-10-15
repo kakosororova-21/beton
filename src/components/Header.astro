@@ -1,0 +1,30 @@
+---
+import Navigation from '../components/Navigation.astro';
+import CallButton from '../components/CallButton.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo_beton_ft.svg';
+import Hamburger from './Hamburger.astro';
+
+import '../styles/header.css';
+---
+<header id="header">
+    <div class="container" id="top">
+      <div class="top-item" id="first-ti">
+        <a href="/" data-astro-history="push"><Image src={logo} alt=""/></a>
+        <div class="item-header" id="post">
+          <p>Связаться по почте</p>
+          <a href="mailto:sales@mavis-beton.ru" id="mail"><h2>sales@mavis-beton.ru</h2></a>
+        </div>
+        <div class="item-header" id="connect">
+          <p >с 9:00 до 21:00 без выходных</p>
+          <CallButton/>
+        </div>
+        <div class="item-header" id="mobile-menu">
+          <Hamburger />
+        </div>
+      </div>
+      <div class="top-item" id="second-ti">
+        <Navigation />
+      </div>
+    </div>
+  </header>

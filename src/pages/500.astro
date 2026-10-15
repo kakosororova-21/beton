@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/error.css';
+
+const pageTitle = "500 - Ошибка сервера";
+---
+<Layout pageTitle={pageTitle}>
+        <section id="about">
+          <div class="container">
+            <div class="error">
+            <h1>500 - Ошибка сервера</h1>
+            <p>Похоже, вы перешли по несуществующей ссылке.</p>
+            <p>Эта страница удалена или никогда не сущестовала.</p>
+            <button onclick="window.location.href='/';">
+                Главная страница
+              </button>
+            </div>
+            </div>
+        </section>
+</Layout>
